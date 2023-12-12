@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    <!-- My JS-->
+    <script src="script.js" charset="UTF-8"></script>
+    <title>REST APIの確認</title>
+</head>
+
+<body>
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#">POST</a></li>
+                        <li><a href="index_get.html">GET</a></li>
+                        <li><a href="#">SubTitle</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1 class=" uk-text-center">POST体験ゾーン</h1>
+    <hr class="uk-divider-icon">
+    <form id="form_post" method="post" accept-charset="UTF-8" action="ここにAPI">
+        <fieldset class="uk-fieldset">
+            <legend class="uk-text-large uk-heading-bullet">AWSに送りたい文章を入力</legend>
+            <div class="uk-margin-bottom uk-margin-left uk-margin-right">
+                <textarea aria-label="Textarea" name="post_textarea" id="post_textarea" rows="10"
+                    class="uk-textarea" placeholder="ここに送りたいテキストを記入してください"></textarea>
+            </div>
+            <button type="button" value="送信" id="submit_post_button"
+                class="uk-text-large uk-text-bolder uk-margin-auto uk-margin-auto-left@m uk-width-1-2@s uk-card uk-card-default uk-card-body uk-text-center uk-button-default uk-button-large uk-card-hover">
+            送信    
+            </button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

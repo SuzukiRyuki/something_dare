@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+    <!-- My JS-->
+    <script src="script.js" charset="UTF-8"></script>
+    <title>REST APIの確認</title>
+</head>
+
+<body>
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html">POST</a></li>
+                        <li class="uk-active"><a href="#">GET</a></li>
+                        <li><a href="#">SubTitle</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1 class="uk-text-center">GET体験ゾーン</h1>
+    <hr class="uk-divider-icon">
+    <div class="uk-margin-large">
+        <h2 class="uk-text-center">DBに保存されている内容をDL</h2>
+        <button class="uk-text-large uk-text-bolder uk-margin-auto uk-margin-auto-left@m uk-width-1-2@s uk-card uk-card-small uk-card-default uk-card-body uk-button-default uk-card-hover">DL</button>
+    </div>
+    <hr class="uk-margin-large">
+    <table
+        class="uk-table uk-table-hover uk-table-middle uk-table-divider uk-margin-right uk-card-default uk-width-1-2 uk-margin-auto uk-margin-auto-left@m ">
+        <caption class="uk-text-large uk-heading-bullet">取得できるファイル一覧</caption>
+        <thead>
+            <tr>
+                <th>保存された日付</th>
+                <th class="uk-width-1-3">DLボタン</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2023/12/12</td>
+                <td><button class="uk-button uk-button-default" type="button">Button</button></td>
+            </tr>
+            <tr>
+                <td>2023/12/11</td>
+                <td><button class="uk-button uk-button-default" type="button">Button</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="reload_db_contents_table" class="uk-button uk-button-default uk-width-1-2 uk-container" type="button"> 更新</button>
+</body>
+
+</html>
